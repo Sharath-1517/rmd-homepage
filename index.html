@@ -4,15 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>RMD Engineering College</title>
-  <link rel="shortcut icon" href="/img/rmd_logo.jpg" type="image">
+  <link rel="shorhttp://127.0.0.1:5500/tcut icon" href="/img/rmd_logo.jpg" type="image">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-  <header class="w-100 fixed-top" id="#pagetop">
-    <nav id="navbar_top" class="navbar navbar-expand-lg bg-light">
-      <div class="container-xxl">
+  <header class="w-100 fixed-top bg-light" id="#pagetop">
+    <nav class="navbar">
         <div class="navbar-brand header_banner">
           <a href="/" class="nav--logo">
             <img src="/newimages/rmdLogo.png" alt="" class="">
@@ -25,96 +24,48 @@
               <p>(An Autonomous Institution)</p>
             </div>
           </a>
-          <div class="banner_images">
+          <!-- <div class="banner_images">
             <img src="images/news/4.gif" alt="" class="header_image">
             <img src="newimages/ariia.png" alt="" class="header_image">
-          </div>
+          </div> -->
         </div>
         <!-- <img src="newimages" alt="" class="header_image"> -->
-        <button class="navbar-toggler nav-button nav-icon-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <img src="newimages/menu.png" alt="" class="nav-icon">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse navbar--options" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-nav-scroll" id="nav--list">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/">Home</a>
-          </li>
-          <li class="nav-item dropdown">
-            <p class="nav-link dropdown-toggle"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              About Us
-            </p>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="https://rmd.ac.in/aboutus/rmkgroup.html">RMK Group of institutions</a></li>
-              <li><a class="dropdown-item" href="https://rmd.ac.in/aboutus/vision.html">Vision & Mission</a></li>
-              <li><a class="dropdown-item" href="https://rmd.ac.in/aboutus/academicprog.html">Academic Programs</a></li>
-              <li><a class="dropdown-item" href="https://rmd.ac.in/aboutus/approvals.html">Approvals</a></li>
-              <li><a class="dropdown-item" href="https://rmd.ac.in/aboutus/eligibility.html">Eligibility</a></li>
-              <li><a class="dropdown-item" href="https://rmd.ac.in/aboutus/generalconditions.html">Genral conditions</a></li>
-              <li><a class="dropdown-item" href="https://rmd.ac.in/aboutus/scholarships.html">Scholarships</a></li>
-              <li><a class="dropdown-item" href="https://rmd.ac.in/aboutus/guest.html">Distinguished Guests</a></li>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
             </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <p class="nav-link dropdown-toggle"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Adminstration
-            </p>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="https://rmd.ac.in/administration/chairman.html">Chairman</a></li>
-              <li><a class="dropdown-item" href="https://rmd.ac.in/administration/vc.html">Vice Chairman</a></li>
-              <li><a class="dropdown-item" href="https://rmd.ac.in/administration/managementteam.html">Management Team</a></li>
-              <li><a class="dropdown-item" href="https://rmd.ac.in/administration/governig.html">Governing Board</a></li>
-              <li><a class="dropdown-item" href="https://rmd.ac.in/administration/principal.html">Principal</a></li>
-              <li><a class="dropdown-item" href="https://rmd.ac.in/administration/deanresearch.html">Dean Research</a></li>
-              <li><a class="dropdown-item" href="https://rmd.ac.in/administration/academicdean.html">Academic Dean</a></li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <p class="nav-link dropdown-toggle"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Academics
-            </p>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="https://rmd.ac.in/academics/UG_regulations_2021.html">Regulations 2021</a></li>
-              <li><a class="dropdown-item" href="https://rmd.ac.in/academics/Curriculum.html">Curriculam and Syllabus</a></li>
-              <li><a class="dropdown-item" href="https://rmd.ac.in/aboutus/rmkgroup.html">Courses Offered</a></li>
-              <li><a class="dropdown-item" href="https://rmd.ac.in/academics/Academic_Schedule.html">Academic Schedule</a></li>
-              <li><a class="dropdown-item" href="https://rmd.ac.in/academics/Code_of_conduct.html">Code of Conduct</a></li>
-              <li><a class="dropdown-item" href="https://rmd.ac.in/academics/Examination.html">Examination</a></li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <p class="nav-link dropdown-toggle"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Departments
-            </p>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="https://rmd.ac.in/dept/cse/index.html">CSE</a></li>
-              <li><a class="dropdown-item" href="https://rmd.ac.in/dept/ece/index.html">ECE</a></li>
-              <li><a class="dropdown-item" href="https://rmd.ac.in/dept/eee/index.html">EEE</a></li>
-              <li><a class="dropdown-item" href="https://rmd.ac.in/dept/it/index.html">IT</a></li>
-              <li><a class="dropdown-item" href="https://rmd.ac.in/dept/csbs/index.html">CSBS</a></li>
-              <li><a class="dropdown-item" href="https://rmd.ac.in/dept/snh/index.html">S&H</a></li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <p class="nav-link dropdown-toggle"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Campus
-            </p>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="https://rmd.ac.in/campus/facilities.html">Genral Facilities</a></li>
-              <li><a class="dropdown-item" href="https://rmd.ac.in/campus/greencampus.html">Green Campus</a></li>
-              <li><a class="dropdown-item" href="https://rmd.ac.in/building.html">Buildings</a></li>
-              <li><a class="dropdown-item" href="https://rmd.ac.in/computercenter/index.html">Computer Centre</a></li>
-              <li><a class="dropdown-item" href="https://rmd.ac.in/library/index.html">Central Library</a></li>
-              <li><a class="dropdown-item" href="https://rmd.ac.in/sports/index.html">Sports</a></li>
-              <li><a class="dropdown-item" href="https://rmd.ac.in/campus/hostel.html">Hostel</a></li>
-              <li><a class="dropdown-item" href="https://rmd.ac.in/campus/transport.html">Transport</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <p class="nav-link" role="button"><a href="https://www.iobnet.co.in/iobpay/entry.do?dirlinkmerid=RMDVEL&amp;dirlinkcatcd=EDU&quot" class="pay_online">Pay Fee Online</a></p>
-          </li>
-        </ul>
+            <form class="d-flex mt-3" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
         </div>
-      </div>
     </nav>
   </header>
   <main class="main-container">
@@ -209,29 +160,31 @@
         </a>
         <a href="https://nextgen.rmd.ac.in" target="_blank" class="rmd--featured_card">
           <img src="newimages/science.png" alt="">
-          <p>Courses Offered</p>
+          <p>RMK Nextgen Student Login</p>
         </a>
         <a href="https://nextgenfaculty.rmd.ac.in/index.html" target="_blank" class="rmd--featured_card">
           <img src="newimages/keyman.png" alt="">
-          <p>Courses Offered</p>
+          <p>RMK Nextgen Faculty Login</p>
         </a>
         <a href="https://rmkec.ac.in/admission2023/sendotp1.php" target="_blank" class="rmd--featured_card">
           <img src="newimages/pay.png" alt="">
-          <p>Courses Offered</p>
+          <p>Online Admission Enquiry Form</p>
         </a>
         <a href="https://www.iobnet.co.in/iobpay/entry.do?dirlinkmerid=RMDVEL&dirlinkcatcd=EDU" target="_blank" class="rmd--featured_card">
           <img src="newimages/creditcard.png" alt="">
-          <p>Courses Offered</p>
+          <p>Online Fee Payment</p>
         </a>
         <a href="https://rmd.ac.in/alumni/index.html" target="_blank" class="rmd--featured_card">
           <img src="newimages/alumni.png" alt="">
-          <p>Courses Offered</p>
+          <p>Alumni Desk</p>
         </a>
       </div>
     </div>
     <!-- ============= -->
 
-    <div class="rmd--catalogue container-xxl">
+    <div class="catalogue--section mt-5">
+      <h3 class="text-center">Centres of RMD Institution</h3>
+      <div class="rmd--catalogue">
         <a href="/">
           <img src="images/news/1.jpg" alt="">
         </a>
@@ -292,6 +245,7 @@
         <a href="/">
           <img src="images/news/20.jpg" alt="">
         </a>
+      </div>
     </div>
 
     <!-- Popup Modal -->
@@ -319,6 +273,8 @@
     <!-- ========================= -->
   </main>
 
+
+  <!-- Footer -->
   <footer class="footer">
     <div class="footer--content container-xxl">
       <div class="footer--content__pages">
@@ -385,8 +341,16 @@
       </div>
     </div>
   </footer>
-
+<!-- ========= -->
   <script>
+
+    // For dynamic navbar height.
+    window.addEventListener('load', () => {
+      const headerHeight = document.querySelector('header').offsetHeight;
+      document.body.style.paddingTop = headerHeight + "px";
+    })
+    // ===============
+
     // For Modal
     var myModal = new bootstrap.Modal(document.getElementById('myModal'), {});
     myModal.show();
