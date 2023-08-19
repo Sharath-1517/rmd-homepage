@@ -18,6 +18,14 @@ html, body {
 
 html {
   scroll-behavior: smooth;
+
+  @media (max-width: 640px) {
+    font-size: 14px;
+  }
+
+  @media (max-width: 790px) {
+    font-size: 15px;
+  }
 }
 
 body {
@@ -61,6 +69,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: .5em;
 
   h1 {
     display: flex;
@@ -77,6 +86,7 @@ nav {
     }
   }
   p {
+    margin: 0;
     font-size: .8rem;
     @media (width < 420px) {
       font-size: .6rem;
@@ -84,7 +94,9 @@ nav {
   }
 
   &__title {
-    align-self: end;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 
@@ -188,9 +200,6 @@ nav {
 
 
 .since {
-  object-fit: cover;
-  width: 60px;
-
   @media (width < 560px) {
     display: none;
   }
@@ -200,8 +209,7 @@ nav {
   display: flex;
   gap: 2vmin;
   img {
-    width: 15vmin;
-
+    width: 20vmin;
     @media (width < 760px) {
       display: none;
     }
@@ -211,8 +219,17 @@ nav {
 .banner_images {
   display: flex;
   align-items: center;
-  @media (width < 806px) {
-    display: none;
+  gap: .3em;
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100px;
+    @media (width < 340px) {
+      height: 70px;
+    }
+    @media (width >= 340px) and (width < 420px) {
+      height: 90px;
+    }
   }
 }
 
@@ -227,19 +244,21 @@ nav {
 
   &_card {
     width: 200px;
-    display: grid;
-    place-items: center;
-    gap: .5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
     border-radius: 1rem;
     color: #ffffff;
     text-decoration: none;
     min-height: 200px;
     transition: .2s;
     text-align: center;
-    padding: 1rem 0;
     img {
-      width: 100%;
-      max-width: 100px;
+      object-fit: contain;
+      width: fit-content;
+      height: 100px;
       filter: invert(100%);
     }
     &:hover {
@@ -263,6 +282,12 @@ nav {
     }
     &:nth-child(6) {
       background-color: rgba(19, 19, 201, 0.904);
+    }
+    @media (width < 438px) {
+      padding: 0 .6em;
+      img {
+        height: 70px;
+      }
     }
   }
 }
