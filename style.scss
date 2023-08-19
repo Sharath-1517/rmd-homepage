@@ -46,7 +46,7 @@ nav {
 }
 
 .nav-name {
-  @media (width < 400px) {
+  @media (width < 560px) {
     display: none;
   }
 }
@@ -97,6 +97,9 @@ nav {
       @media (width < 500px) {
         max-width: 100px;
       }
+    }
+    @media (width < 1460px) {
+      margin: 0  1em 0 1em;
     }
   }
   button {
@@ -170,9 +173,6 @@ nav {
   }
 }
 
-.navbar-container {
-  display: flex;
-}
 
 .header_banner {
   display: flex;
@@ -186,9 +186,26 @@ nav {
   }
 }
 
+
 .since {
   object-fit: cover;
   width: 60px;
+
+  @media (width < 560px) {
+    display: none;
+  }
+}
+
+.placing--images {
+  display: flex;
+  gap: 2vmin;
+  img {
+    width: 15vmin;
+
+    @media (width < 760px) {
+      display: none;
+    }
+  }
 }
 
 .banner_images {

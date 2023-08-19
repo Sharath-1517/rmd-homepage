@@ -27,7 +27,7 @@ nav {
   margin: 0 auto;
 }
 
-@media (width < 400px) {
+@media (width < 560px) {
   .nav-name {
     display: none;
   }
@@ -85,6 +85,11 @@ nav {
 @media (width < 500px) {
   .navbar-brand img {
     max-width: 100px;
+  }
+}
+@media (width < 1460px) {
+  .navbar-brand {
+    margin: 0 1em 0 1em;
   }
 }
 .navbar button {
@@ -163,10 +168,6 @@ nav {
   background-color: #646464;
 }
 
-.navbar-container {
-  display: flex;
-}
-
 .header_banner {
   display: flex;
   gap: 2.95em;
@@ -185,6 +186,24 @@ nav {
   -o-object-fit: cover;
      object-fit: cover;
   width: 60px;
+}
+@media (width < 560px) {
+  .since {
+    display: none;
+  }
+}
+
+.placing--images {
+  display: flex;
+  gap: 2vmin;
+}
+.placing--images img {
+  width: 15vmin;
+}
+@media (width < 760px) {
+  .placing--images img {
+    display: none;
+  }
 }
 
 .banner_images {
