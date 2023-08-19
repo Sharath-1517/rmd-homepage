@@ -45,6 +45,18 @@ nav {
   margin: 0 auto;
 }
 
+.nav-name {
+  @media (width < 400px) {
+    display: none;
+  }
+}
+
+.nav-toggle {
+  display: flex;
+  align-items: center;
+  gap: .3em;
+}
+
 .nav--logo {
   display: flex;
   justify-content: center;
@@ -57,9 +69,18 @@ nav {
     font-size: 1.3rem;
     font-weight: 700;
     color: $rmd--blue;
+    @media (width <= 420px) {
+      font-size: .9rem;
+    }
+    @media (width > 420px) and (width < 500px) {
+      font-size: 1rem;
+    }
   }
   p {
     font-size: .8rem;
+    @media (width < 420px) {
+      font-size: .6rem;
+    }
   }
 
   &__title {
@@ -73,6 +94,9 @@ nav {
   &-brand {
     img {
       max-width: 150px;
+      @media (width < 500px) {
+        max-width: 100px;
+      }
     }
   }
   button {
@@ -162,6 +186,11 @@ nav {
   }
 }
 
+.since {
+  object-fit: cover;
+  width: 60px;
+}
+
 .banner_images {
   display: flex;
   align-items: center;
@@ -184,7 +213,6 @@ nav {
     display: grid;
     place-items: center;
     gap: .5em;
-    margin-top: 1.5em;
     border-radius: 1rem;
     color: #ffffff;
     text-decoration: none;
@@ -223,13 +251,27 @@ nav {
 }
 h3 {
   margin: 0 5px;
-  color: $rmd--blue;
+  // color: $rmd--blue;
   font-weight: 700;
+}
+
+.catalogue--container {
+  padding: 2em 0;
+  display: grid;
+  width: 100%;
+  background-color: rgb(29, 31, 63);
+  color: #ffffff;
+
+  @media (width < 510px) {
+    h3 {
+      font-size: 1.2rem;
+    }
+  }
 }
 
 .catalogue--section {
   display: grid;
-  margin: 3rem 0;
+  margin: 3rem auto;
   gap: 3rem;
   grid-template-columns: var(--page-margin) [center-start] 1fr [center-end] var(--page-margin);
 
@@ -246,11 +288,10 @@ h3 {
   overflow: auto;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  padding-left: var(--page-margin);
   padding-right: var(--page-margin);
   max-width: 1600px;
   // margin: 0 auto;
-
+  
   &::-webkit-scrollbar {
     background-color: #9e9e9e60;
     border-radius: 15px;
@@ -269,6 +310,10 @@ h3 {
 
     &:hover {
       transform: scale(1.1);
+    }
+
+    @media (width < 530px) {
+      max-width: 250px;
     }
   }
 }

@@ -27,6 +27,18 @@ nav {
   margin: 0 auto;
 }
 
+@media (width < 400px) {
+  .nav-name {
+    display: none;
+  }
+}
+
+.nav-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.3em;
+}
+
 .nav--logo {
   display: flex;
   justify-content: center;
@@ -40,8 +52,23 @@ nav {
   font-weight: 700;
   color: rgb(0, 0, 133);
 }
+@media (width <= 420px) {
+  .nav--logo h1 {
+    font-size: 0.9rem;
+  }
+}
+@media (width > 420px) and (width < 500px) {
+  .nav--logo h1 {
+    font-size: 1rem;
+  }
+}
 .nav--logo p {
   font-size: 0.8rem;
+}
+@media (width < 420px) {
+  .nav--logo p {
+    font-size: 0.6rem;
+  }
 }
 .nav--logo__title {
   align-self: end;
@@ -54,6 +81,11 @@ nav {
 }
 .navbar-brand img {
   max-width: 150px;
+}
+@media (width < 500px) {
+  .navbar-brand img {
+    max-width: 100px;
+  }
 }
 .navbar button {
   border: none;
@@ -149,6 +181,12 @@ nav {
   }
 }
 
+.since {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 60px;
+}
+
 .banner_images {
   display: flex;
   align-items: center;
@@ -173,7 +211,6 @@ nav {
   display: grid;
   place-items: center;
   gap: 0.5em;
-  margin-top: 1.5em;
   border-radius: 1rem;
   color: #ffffff;
   text-decoration: none;
@@ -212,13 +249,25 @@ nav {
 
 h3 {
   margin: 0 5px;
-  color: rgb(0, 0, 133);
   font-weight: 700;
+}
+
+.catalogue--container {
+  padding: 2em 0;
+  display: grid;
+  width: 100%;
+  background-color: rgb(29, 31, 63);
+  color: #ffffff;
+}
+@media (width < 510px) {
+  .catalogue--container h3 {
+    font-size: 1.2rem;
+  }
 }
 
 .catalogue--section {
   display: grid;
-  margin: 3rem 0;
+  margin: 3rem auto;
   gap: 3rem;
   grid-template-columns: var(--page-margin) [center-start] 1fr [center-end] var(--page-margin);
 }
@@ -234,7 +283,6 @@ h3 {
   overflow: auto;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  padding-left: var(--page-margin);
   padding-right: var(--page-margin);
   max-width: 1600px;
 }
@@ -254,6 +302,11 @@ h3 {
 }
 .rmd--catalogue img:hover {
   transform: scale(1.1);
+}
+@media (width < 530px) {
+  .rmd--catalogue img {
+    max-width: 250px;
+  }
 }
 
 .footer {
