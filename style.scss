@@ -4,6 +4,11 @@
   padding: 0;
 }
 
+@font-face {
+  font-family: 'Sans', sans-serif;
+  src: url(./font/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
 :root {
   --page-margin: min(2rem, 5vw);
 }
@@ -13,7 +18,7 @@ $rmd--blue: rgb(0, 0, 133);
 
 html, body {
   height: 100%;
-  font-family: sans;
+  font-family: 'Sans';
 }
 
 html {
@@ -30,22 +35,7 @@ html {
 
 body {
   background-color: #00000004;
-  // padding-top: 56px;
 }
-
-// .main-container {
-//   margin-top: 13rem;
-
-//   @media (width < 991px) and (width >= 430px){
-//     margin-top: 11rem;
-//   }
-//   @media (width < 430px) {
-//     margin-top: 8rem;
-//   }
-//   @media (width < 312px) {
-//     margin-top: 10rem;
-//   }
-// }
 
 nav {
   max-width: 1440px;

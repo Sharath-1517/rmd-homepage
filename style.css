@@ -4,13 +4,17 @@
   padding: 0;
 }
 
+@font-face {
+  font-family: "Sans", sans-serif;
+  src: url(./font/OpenSans-VariableFont_wdth\,wght.ttf);
+}
 :root {
   --page-margin: min(2rem, 5vw);
 }
 
 html, body {
   height: 100%;
-  font-family: sans;
+  font-family: "Sans";
 }
 
 html {
