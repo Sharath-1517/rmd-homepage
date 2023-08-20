@@ -316,6 +316,11 @@
                     <img src="images/news/20.jpg" alt="...">
                   </div>
                 </div>
+                <div class="card">
+                  <div class="image-wrapper">
+                    <img src="images/news/13.jpg" alt="...">
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -431,6 +436,10 @@
 
     // For dynamic navbar height.
     window.addEventListener('load', () => {
+      const headerHeight = document.querySelector('header').offsetHeight;
+      document.body.style.paddingTop = headerHeight + "px";
+    })
+    window.addEventListener('resize', () => {
       const headerHeight = document.querySelector('header').offsetHeight;
       document.body.style.paddingTop = headerHeight + "px";
     })

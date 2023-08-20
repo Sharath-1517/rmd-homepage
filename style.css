@@ -247,7 +247,7 @@ nav {
   align-items: center;
   width: 100%;
   gap: 1em;
-  padding: 4rem 0;
+  padding: 4em 0;
 }
 .rmd--featured_card {
   width: 200px;
@@ -256,12 +256,13 @@ nav {
   align-items: center;
   justify-content: center;
   gap: 1em;
-  border-radius: 1rem;
+  border-radius: 1em;
   color: #ffffff;
   text-decoration: none;
   min-height: 200px;
   transition: 0.2s;
   text-align: center;
+  padding: 0 0.6em;
 }
 .rmd--featured_card img {
   -o-object-fit: contain;
@@ -295,10 +296,17 @@ nav {
 }
 @media (width < 438px) {
   .rmd--featured_card {
+    width: 150px;
+    min-height: 170px;
     padding: 0 0.6em;
   }
   .rmd--featured_card img {
     height: 70px;
+  }
+}
+@media (width < 440px) {
+  .rmd--featured {
+    font-size: 12px;
   }
 }
 
