@@ -110,6 +110,12 @@ nav {
   --bs-navbar-toggler-focus-width: 0;
 }
 
+.navbar-nav {
+  ul, li {
+    transition: .3s;
+  }
+}
+
 .carousel-height {
   height: 60vmin;
   @media (width >= 880px) and (width <= 1100px) {
