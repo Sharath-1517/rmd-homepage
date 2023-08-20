@@ -114,10 +114,6 @@ nav {
   border: none;
 }
 
-.navbar-nav ul, .navbar-nav li {
-  transition: 0.3s;
-}
-
 .carousel-height {
   height: 60vmin;
 }
