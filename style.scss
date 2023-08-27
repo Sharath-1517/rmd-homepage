@@ -19,6 +19,7 @@ $rmd--blue: rgb(0, 0, 133);
 html, body {
   height: 100%;
   font-family: 'Sans';
+  background-color: #fff9e9;
 }
 
 html {
@@ -31,10 +32,6 @@ html {
   @media (max-width: 790px) {
     font-size: 15px;
   }
-}
-
-body {
-  background-color: #00000004;
 }
 
 nav {
@@ -299,7 +296,7 @@ h3 {
   padding: 2em 0;
   display: grid;
   width: 100%;
-  background-color: rgb(21, 24, 58);
+  // background-color: rgb(21, 24, 58);
   color: #ffffff;
 
   @media (width < 510px) {
@@ -429,7 +426,7 @@ h3 {
 
 .rmd--centres_container {
   padding: 8em 3em;
-  background: radial-gradient(circle, rgba(97,111,222,1) 0%, rgba(130,129,236,1) 100%);
+  background: linear-gradient(135deg, rgba(243,216,156,1) 0%, rgba(46,74,73,1) 100%);
 }
 
 
