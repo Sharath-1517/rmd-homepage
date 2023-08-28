@@ -673,7 +673,7 @@ h3 {
 
 footer {
   color: #ffffffff;
-  padding: 4em;
+  padding: 4em 4em 0 4em;
   width: 100%;
   background-color: #173d8f;
 }
@@ -774,4 +774,10 @@ footer {
     }
   }
 
+}
+
+.copyrights {
+  text-align: center;
+  padding: 1em 0 0.1em 0;
+  margin-top: 2em;
 }
