@@ -381,9 +381,11 @@ h3 {
 .rmd--centres {
   .card {
     border: none;
-    border-radius: 12%;
     box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
     margin: 0 0.5em;
+    height: 81.53px;
+    display: grid;
+    place-items: center;
   }
   .carousel-inner {
     padding: 2em;
@@ -422,7 +424,7 @@ h3 {
   .image-wrapper img {
     max-width: 100%;
     max-height: 100%;
-    border-radius: 13%;
+    border-radius: 5%;
   }
   
 }
@@ -532,12 +534,13 @@ h3 {
     }
     .cards-wrapper {
       justify-content: center;
+      gap: 0;
     }
   }
   
   .image-wrapper img {
     min-width: 100%;
-    max-height: 350px;
+    max-height: 250px;
     border-radius: 5% 5% 0 0;
   }
 
