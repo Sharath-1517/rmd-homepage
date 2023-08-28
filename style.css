@@ -15,6 +15,7 @@
 html, body {
   height: 100%;
   font-family: "Sans";
+  background-color: #fff9e9;
 }
 
 html {
@@ -29,10 +30,6 @@ html {
   html {
     font-size: 15px;
   }
-}
-
-body {
-  background-color: rgba(0, 0, 0, 0.0156862745);
 }
 
 nav {
@@ -319,7 +316,6 @@ h3 {
   padding: 2em 0;
   display: grid;
   width: 100%;
-  background-color: rgb(21, 24, 58);
   color: #ffffff;
 }
 @media (width < 510px) {
@@ -442,7 +438,7 @@ h3 {
 
 .rmd--centres_container {
   padding: 8em 3em;
-  background: radial-gradient(circle, rgb(97, 111, 222) 0%, rgb(130, 129, 236) 100%);
+  background: linear-gradient(135deg, rgb(243, 216, 156) 0%, rgb(46, 74, 73) 100%);
 }
 
 .center_of_excellence .card {
@@ -543,6 +539,7 @@ h3 {
 }
 .rmd--news .image-wrapper img {
   min-width: 100%;
+  max-width: 100%;
   max-height: 250px;
   border-radius: 5% 5% 0 0;
 }
@@ -553,6 +550,24 @@ h3 {
 .rmd--news_container {
   padding: 8em 3em;
   background: radial-gradient(circle, rgb(97, 111, 222) 0%, rgb(130, 129, 236) 100%);
+}
+
+.placementcount--container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+.placementcount__item {
+  text-align: center;
+  width: 150px;
+  height: 150px;
+  display: grid;
+  place-items: center;
+  padding: 2em;
+  background-color: #646464;
+  border-radius: 100%;
 }
 
 footer {
