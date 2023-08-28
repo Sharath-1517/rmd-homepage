@@ -496,6 +496,7 @@ h3 {
   border-radius: 5%;
   box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
   margin: 0 0.5em;
+  height: 500px;
 }
 .rmd--news .carousel-inner {
   padding: 2em;
