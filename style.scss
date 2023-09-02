@@ -709,8 +709,12 @@ footer {
           gap: .5em;
         }
         a,li {
-          color: #ffffff;
+          color: #e0e0e0;
           text-decoration: none;
+        }
+        a:hover {
+          color: #ffffff;
+          text-decoration: underline;
         }
         @media (width < 1000px) {
           // gap: .5em;

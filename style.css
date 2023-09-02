@@ -700,8 +700,12 @@ footer {
   gap: 0.5em;
 }
 .footer--links .pages ul a, .footer--links .pages ul li {
-  color: #ffffff;
+  color: #e0e0e0;
   text-decoration: none;
+}
+.footer--links .pages ul a:hover {
+  color: #ffffff;
+  text-decoration: underline;
 }
 @media (width < 1000px) {
   .footer--links .pages ul {
